@@ -1,0 +1,74 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 4
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - other
+  - sandbox
+  - status
+  - website
+hosts:
+- host: api.irisfinance.co
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: irisfinance.co
+  role: api
+  relation: own
+- host: beta.iris.finance
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - docs
+  registrable_domain: iris.finance
+  role: sandbox
+  relation: other-domain
+- host: dashboard.irisfinance.co
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: irisfinance.co
+  role: other
+  relation: own
+- host: status.irisfinance.co
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: irisfinance.co
+  role: status
+  relation: own
+- host: www.irisfinance.co
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Pricing
+  - Blog
+  - Website
+  serves: []
+  registrable_domain: irisfinance.co
+  role: website
+  relation: own

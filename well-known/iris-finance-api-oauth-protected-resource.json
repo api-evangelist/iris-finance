@@ -1,0 +1,1 @@
+{"resource":"https://api.irisfinance.co/mcp","authorization_servers":["https://api.irisfinance.co"],"bearer_methods_supported":["header"],"scopes_supported":["iris/read","iris/write"]}

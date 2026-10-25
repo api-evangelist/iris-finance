@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/iris-finance/integrations
+- https://n8n.io/integrations/iris-finance/
+- https://composio.dev/toolkits/iris-finance
+- https://monid.ai/tools/iris-finance
+checked:
+- https://composio.dev/toolkits/iris-finance
+- https://monid.ai/tools/iris-finance
+- https://n8n.io/integrations/iris-finance/
+- https://zapier.com/apps/iris-finance/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

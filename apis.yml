@@ -1,25 +1,84 @@
 aid: iris-finance
+
 name: Iris Finance
-description: 'Iris Finance is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by founder-collective) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/images/U3blwl0bbVn1nKVMgS37VeavFk.jpg
+
+description: Iris Finance is a decentralized finance platform offering a suite of financial services including lending, borrowing, and yield farming.
+  It leverages blockchain technology to provide transparent, permissionless access to financial instruments, targeting both retail and institutional
+  users. The platform emphasizes security, composability, and user-friendly interfaces, aiming to democratize access to sophisticated financial
+  products while maintaining regulatory compliance where applicable.
+
 url: https://raw.githubusercontent.com/api-evangelist/iris-finance/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- DeFi
+- Finance
+- Blockchain
+- Lending
+- Borrowing
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- founder-collective
+
 common:
+- type: Vendors
+  url: vendors/iris-finance-vendors.yml
+- type: WellKnown
+  url: well-known/iris-finance-well-known.yml
+- type: Hosts
+  url: hosts/iris-finance-hosts.yml
+- type: TermsOfService
+  url: https://www.irisfinance.co/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.irisfinance.co/privacy-policy
+- type: Pricing
+  url: https://www.irisfinance.co/pricing
+- type: Blog
+  url: https://www.irisfinance.co/blog
+- type: DomainSecurity
+  url: security/iris-finance-domain-security.yml
 - type: Website
   url: https://www.irisfinance.co/
+
+apis:
+- name: Iris Finance API
+  description: Decentralized finance platform API documented at the developer portal.
+  humanURL: https://beta.iris.finance
+  baseURL: null
+  aid: iris-finance:iris-finance-api
+
+x-backed-by:
+- founder-collective
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Docs site beta.iris.finance returns only JavaScript-rendered pages with no machine‑readable spec.
+  evidence:
+  - url: https://beta.iris.finance
+    status: 302
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
